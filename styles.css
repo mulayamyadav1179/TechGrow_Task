@@ -1,0 +1,195 @@
+* {
+  background-color: #141414;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #a8a8a8;
+}
+
+header {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header nav ul a:hover {
+  font-size: 1.051rem;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: auto;
+  height: 80vh;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.862);
+  padding: 20px;
+}
+.hero-text h2, p {
+  background-color: transparent
+}
+
+#services {
+  padding: 50px 20px;
+}
+#services h2 {
+  color: white;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service.haircut {
+  background-image: url("./assesst/haircut1.jpeg");
+  background-size: cover;
+}
+.service.coloring {
+  background-image: url("./assesst/color2.jpg");
+  background-size: cover;
+}
+.service.styling {
+  background-image: url("./assesst/style2.jpg");
+  background-size: cover;
+}
+.service.treatment {
+  background-image: url("./assesst/treatment2.jpg");
+  background-size: cover;
+}
+
+.service-container .haircut:hover {
+  background-image: url("./assesst/haircut2.jpg");
+  transition: 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgba(203, 203, 203, 0);
+}
+.service-container .coloring:hover {
+  background-image: url("./assesst/color.jpg");
+  transition: 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgba(203, 203, 203, 0);
+}
+.service-container .styling:hover {
+  background-image: url("./assesst/style.jpg");
+  transition: 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgba(203, 203, 203, 0);
+}
+.service-container .treatment:hover {
+  background-image: url("./assesst/treatment.jpg");
+  transition: 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgba(203, 203, 203, 0);
+}
+
+.service {
+  flex: 1 0 21%;
+  margin: 30px;
+  padding: 38px 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background: rgba(34, 34, 34, 0.669);
+  cursor: pointer;
+}
+.service.treatment {
+  padding: 70px 25px;
+}
+@media screen and (min-width: 900px) {
+  .service {
+    padding: 90px 35px;
+  }
+  .service.treatment {
+    padding: 190px 60px;
+  }
+}
+.service h3 {
+  background: transparent;
+}
+
+#contact {
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label, input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+hr {
+  margin-top: 4rem;
+  height: 1px;
+  border: none;
+  background-color: rgb(115, 115, 115);
+  width: 90%;
+}
+hr.home {
+  margin-top: -1rem;
+  margin-bottom: 4rem;
+}
+
+button {
+  padding: 19px;
+  background: #1DB954;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+
+form input, textarea {
+  background: rgb(31, 31, 31);
+}
+
